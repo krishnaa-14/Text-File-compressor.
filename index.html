@@ -1,0 +1,57 @@
+<html>
+
+    <meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>File Compressor</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</html>
+
+<body>
+	<div class=container-fluid>
+		<h1>Compress Your Text File <i class="far fa-file-alt"></i> </h1>
+        <h6><i>Compress and De-compress Your Text File</i></h6>
+		<div class="main-content" id="uploadPage">
+			<h2>Upload a Text File</h2>
+            <br>
+			<i class="fas fa-upload fa-5x"></i>
+            <br>
+            <br>
+			<input class="btn btn-outline-secondary" type="file" id="uploadFile">
+            <br>
+            <br>
+			<input class="btn btn-outline-success" type="button" id="submitButton" value="Submit">
+		</div>
+        <div class="main-content" id="compressPage">
+			<h2>Choose An Action</h2>
+            <br>
+			<i class="fas fa-file-archive fa-5x"></i>
+            <br>
+            <br>
+			<input class="btn btn-outline-secondary" type="button" id="compress" value="Compress">
+            <input class="btn btn-outline-secondary" type="button" id="decompress" value="De-compress">
+		</div>
+        <div class="main-content" id="outputPage"></div>
+        <br>
+        <input class="btn btn-outline-primary" type="button" onclick="location.reload()" id="gotohome" value="Compress Another File">
+	</div>
+    
+    <script src = "index.js"></script>
+
+</body>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue fixed-bottom">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"> Created by Krishna Vamsi
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
